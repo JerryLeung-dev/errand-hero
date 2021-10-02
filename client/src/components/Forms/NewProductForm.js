@@ -22,14 +22,7 @@ function NewProductForm(props) {
           });
       }}
     >
-      <Form
-        form={form}
-        layout="vertical"
-        name="form_in_modal"
-        // initialValues={{
-
-        // }}
-      >
+      <Form form={form} layout="vertical" name="form_in_modal">
         <Form.Item
           name="name"
           label="Product name"
@@ -42,10 +35,28 @@ function NewProductForm(props) {
         >
           <Input />
         </Form.Item>
-        <Form.Item name="price" label="Price">
+        <Form.Item
+          name="price"
+          label="Price"
+          rules={[
+            {
+              required: true,
+              message: "Please input the product price!",
+            },
+          ]}
+        >
           <Input type="number" />
         </Form.Item>
-        <Form.Item name="description" label="Description">
+        <Form.Item
+          name="description"
+          label="Description"
+          rules={[
+            {
+              required: true,
+              message: "Please input the product description!",
+            },
+          ]}
+        >
           <Input type="textarea" />
         </Form.Item>
       </Form>

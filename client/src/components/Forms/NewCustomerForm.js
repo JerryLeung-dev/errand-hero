@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Form, Input, Radio } from "antd";
+import { Modal, Form, Input } from "antd";
 
 function NewCustomerForm(props) {
   const [form] = Form.useForm();
@@ -22,14 +22,7 @@ function NewCustomerForm(props) {
           });
       }}
     >
-      <Form
-        form={form}
-        layout="vertical"
-        name="form_in_modal"
-        initialValues={{
-          gender: "M",
-        }}
-      >
+      <Form form={form} layout="vertical" name="form_in_modal">
         <Form.Item
           name="name"
           label="Customer name"
@@ -42,20 +35,29 @@ function NewCustomerForm(props) {
         >
           <Input />
         </Form.Item>
-        <Form.Item name="phone" label="Phone">
+        <Form.Item
+          name="phone"
+          label="Phone"
+          rules={[
+            {
+              required: true,
+              message: "Please input the customer phone!",
+            },
+          ]}
+        >
           <Input type="number" />
         </Form.Item>
-        <Form.Item name="address" label="Address">
-          <Input />
-        </Form.Item>
         <Form.Item
-          name="gender"
-          //   className="collection-create-form_last-form-item"
+          name="address"
+          label="Address"
+          rules={[
+            {
+              required: true,
+              message: "Please input the customer address!",
+            },
+          ]}
         >
-          <Radio.Group>
-            <Radio value="M">Male</Radio>
-            <Radio value="F">Female</Radio>
-          </Radio.Group>
+          <Input />
         </Form.Item>
       </Form>
     </Modal>
