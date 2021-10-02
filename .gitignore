@@ -3,5 +3,5 @@ node_modules/
 
 /client/build
 # production
-build/
+/build
 *.env
