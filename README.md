@@ -17,8 +17,6 @@ Env variables:
   - DATABASE= your mongodb uri
 
 
-
-
 INSTALL DEPENDENCIES(API AND CLIENT)
 
   npm install
@@ -29,9 +27,11 @@ INSTALL DEPENDENCIES(API AND CLIENT)
 RUN
 
   #Run frontend(:3000) & backend(:5000)
-  npm run dev
+  - npm run dev
+  
+  
   #Run backend only
-  npm run server
+  - npm run server
   
   
   
@@ -39,16 +39,16 @@ RUN
 BUILD & DEPLOY
 
 #Create client production build
-cd client
-npm run build
+- cd client
+- npm run build
 
 There is a Heroku postbuild script, so if you push to Heroku, no need to build manually for deployment to Heroku
 
 IMPORT/DELETE SAMPLE DATA
 #Import data
-cd api/dev-data
-node import-dev-data --import
+- cd api/dev-data
+- node import-dev-data --import
 
 #Delete data
-cd api/dev-data
-node import-dev-data --delete
+- cd api/dev-data
+- node import-dev-data --delete
