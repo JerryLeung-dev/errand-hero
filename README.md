@@ -1,4 +1,11 @@
-The project runs on nodejs. Make sure you install nodejs
+The project runs on nodejs. Make sure you install nodejs (version 14.x) https://nodejs.org/en/.
+
+
+TECH STACK:
+- Front-end: React
+- Backend: NodeJs/ExpressJS
+- Database: MongoDB
+- Deployed on Heroku
 
 FEATURES:
 
@@ -11,10 +18,14 @@ FEATURES:
 
 USAGE:
 
+Create confib.env at the root
+
+
 Env variables:
   - PORT=5000
   - NODE_ENV=development
-  - DATABASE= your mongodb uri
+  - DATABASE= your mongodb uri (with password as PASSWORD variable) //e.g.: mongodb+srv://admin:<PASSWORD>...
+  - DATABASE_PASSWORD= your database password
 
 
 INSTALL DEPENDENCIES(API AND CLIENT)
@@ -52,3 +63,23 @@ IMPORT/DELETE SAMPLE DATA
 #Delete data
 - cd api/dev-data
 - node import-dev-data --delete
+
+
+BACKEND Docs
+- Base url: http://localhost:5000 (on development) && https://errandhero.herokuapp.com/ (on production)
+- Routes: 
+  
+  
+  
+    Customers: - /api/v1/customers (get, post)
+  
+  
+               - /api/v1/customers/:slug (get,patch,delete)
+  
+  
+  
+    Products : - /api/v1/products (get, post)
+  
+  
+               - /api/v1/products/product-list   (get) //return a list of product names for autocomplete suggestions
+    
