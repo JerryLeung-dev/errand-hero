@@ -1,0 +1,19 @@
+.content {
+  width: 95%;
+  margin: 20px auto 0;
+}
+
+.search-bar {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets//images/searchbar-image.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.purchases-control {
+  min-height: 75vh;
+  margin-left: 35px;
+}

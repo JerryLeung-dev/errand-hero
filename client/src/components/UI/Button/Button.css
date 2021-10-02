@@ -1,0 +1,13 @@
+.btn {
+  margin-right: 10px;
+}
+
+#btn__view {
+  background: #7edb40;
+  border-color: #7edb40;
+}
+
+#btn__view:hover {
+  background: #83dd46;
+  border-color: #83dd46;
+}

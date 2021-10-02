@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 100%;
+}
+
+.brand {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(126, 219, 64);
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.brand a:hover,
+.brand a:visited,
+.brand a:active {
+  color: rgb(126, 219, 64);
+}

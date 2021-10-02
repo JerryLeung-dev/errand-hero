@@ -1,0 +1,42 @@
+{
+  "name": "errandhero",
+  "version": "1.0.0",
+  "description": "Homework assignment for Darzin Software",
+  "main": "app.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "server": "nodemon api/server.js",
+    "client": "cd client && npm run start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start:prod": "SET NODE_ENV=production && nodemon api/server.js",
+    "import": "node api/dev-data/import-dev-data.js --import"
+  },
+  "author": "Jerry Leung",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "concurrently": "^6.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8",
+    "morgan": "^1.10.0",
+    "slugify": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}

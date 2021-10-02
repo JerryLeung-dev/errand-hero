@@ -1,0 +1,15 @@
+.card {
+  width: 100%;
+}
+
+.right {
+  text-align: right;
+}
+
+.ant-spin-nested-loading {
+  min-height: 65vh !important;
+}
+
+.ant-list-item {
+  padding: 0 12px 12px;
+}

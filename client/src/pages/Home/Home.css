@@ -1,0 +1,37 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  /* margin: auto; */
+  position: relative;
+  background-image: linear-gradient(to top left, #52c41a08, rgb(41 42 41 / 64%)),
+    url(../../assets//images//banner-image.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.banner {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+
+.banner h1,
+.banner p {
+  color: white;
+}
+
+.banner__title {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.banner__para {
+  font-size: 28px;
+}
+
+.banner__logo {
+  background-color: white;
+  color: #7edb40;
+  padding: 0 10px 5px;
+  font-size: 50px;
+}
