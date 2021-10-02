@@ -1,34 +1,43 @@
 The project runs on nodejs. Make sure you install nodejs
+
 FEATURES:
 
-- Display product list
-- Product search feature (Autocomplete)
-- Product pagination
-
-- Display customer list
-- Customer profile with purchase records
-
--Database import and delete sample data
+  - Display product list
+  - Product search feature (Autocomplete)
+  - Product pagination
+  - Display customer list
+  - Customer profile with purchase records
+  - Database import and delete sample data
 
 USAGE:
 
 Env variables:
-PORT=5000
-NODE_ENV=development
-DATABASE= your mongodb uri
+  - PORT=5000
+  - NODE_ENV=development
+  - DATABASE= your mongodb uri
+
+
+
 
 INSTALL DEPENDENCIES(API AND CLIENT)
-npm install
-cd frontend
+
+  npm install
+  cd frontend
+  
+  
 
 RUN
-#Run frontend(:3000) & backend(:5000)
-npm run dev
 
-#Run backend only
-npm run server
+  #Run frontend(:3000) & backend(:5000)
+  npm run dev
+  #Run backend only
+  npm run server
+  
+  
+  
 
 BUILD & DEPLOY
+
 #Create client production build
 cd client
 npm run build
