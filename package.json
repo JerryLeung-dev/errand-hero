@@ -8,13 +8,14 @@
     "server": "nodemon api/server.js",
     "client": "cd client && npm run start",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "start:prod": "SET NODE_ENV=production && nodemon api/server.js",
-    "import": "node api/dev-data/import-dev-data.js --import"
+    "start:prod": "SET NODE_ENV=production && node api/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Jerry Leung",
   "license": "ISC",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "compression": "^1.7.4",
     "concurrently": "^6.2.2",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
