@@ -47,7 +47,7 @@ class PurchasesControl extends Component {
             <List.Item key={purchase.name}>
               <Card
                 size="small"
-                className="card"
+                className="purchase-item"
                 headStyle={{ backgroundColor: "#7cfb7c33" }}
                 title={purchase.name}
                 extra={
